@@ -100,12 +100,5 @@ int main(int argc, char* argv[]){
   // run the game
   g.start();
 
-  // cleanup
-  delete b1;
-  delete b2;
-  delete p1;
-  delete p2;
-  
-  
   return 0;
 }

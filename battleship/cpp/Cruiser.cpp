@@ -6,7 +6,7 @@
 
 const int Cruiser::CRUISER_SHOTS = 4;
 
-const int Cruiser::CRUISER_SIZE = 4;
+const Cruiser::Ship_sz Cruiser::CRUISER_SIZE = 4;
 
 const std::vector<std::string> Cruiser::CRUISER_NAMES({"USS Juneau", "USS Lake Erie", "USS Lake Champlain", "USS Astoria", "USS Indianapolis"});
 

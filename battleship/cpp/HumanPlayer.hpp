@@ -1,7 +1,6 @@
 #ifndef human_player_hpp
 #define human_player_hpp
 
-
 #include "Player.hpp"
 #include "ViewScreen.hpp"
 #include <utility>

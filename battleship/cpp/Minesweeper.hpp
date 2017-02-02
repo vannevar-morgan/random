@@ -16,7 +16,7 @@ protected:
 private:
   static const int MINESWEEPER_SHOTS;
 
-  static const int MINESWEEPER_SIZE;
+  static const Ship_sz MINESWEEPER_SIZE;
   
   static const std::vector<std::string> MINESWEEPER_NAMES;
 

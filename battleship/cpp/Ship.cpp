@@ -73,6 +73,6 @@ void Ship::setCells(const std::vector<std::pair<int, int> >& shipCells){
   if(shipCells.size() == this->size){
     cells = shipCells;
   }else{
-    throw std::invalid_argument("the number of cells in the vector of coordinates passed to setCells() must match the size of the ship...\nship size = " + std::to_string(size) + " but the size of shipCells passed = " + std::to_string(shipCells.size()));
+    throw std::invalid_argument("the number of cells in the vector of coordinates passed to setCells() must match the size of the ship...\nship size = " + std::to_string(this->size) + " but the size of shipCells passed = " + std::to_string(shipCells.size()));
   }
 }

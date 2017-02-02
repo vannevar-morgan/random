@@ -10,6 +10,8 @@ class Player{
 public:
   Player() : m_result(std::pair<int, std::string>(1000, "")), m_name("") {} // m_result is initialized to (1000, "") because -1, 0, 1 are used for hitcodes, 1000 signifies no guess has been made.
 
+  virtual ~Player() {}
+
   virtual Player* clone() const = 0;
 
   virtual std::pair<int, int> makeGuess() = 0;

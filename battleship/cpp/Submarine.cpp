@@ -6,7 +6,7 @@
 
 const int Submarine::SUBMARINE_SHOTS = 3;
 
-const int Submarine::SUBMARINE_SIZE = 3;
+const Submarine::Ship_sz Submarine::SUBMARINE_SIZE = 3;
 
 const std::vector<std::string> Submarine::SUBMARINE_NAMES({"USS Ohio", "USS Los Angeles", "USS Seawolf", "USS Gato", "USS Texas"});
 

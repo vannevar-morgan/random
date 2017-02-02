@@ -15,7 +15,7 @@ protected:
 private:
   static const int DESTROYER_SHOTS;
 
-  static const int DESTROYER_SIZE;
+  static const Ship_sz DESTROYER_SIZE;
   
   static const std::vector<std::string> DESTROYER_NAMES;
 };

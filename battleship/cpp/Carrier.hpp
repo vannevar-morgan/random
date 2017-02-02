@@ -17,7 +17,7 @@ protected:
 
 private:
   static const int CARRIER_SHOTS;
-  static const int CARRIER_SIZE;
+  static const Ship_sz CARRIER_SIZE;
   
   static const std::vector<std::string> CARRIER_NAMES;
   

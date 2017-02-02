@@ -6,7 +6,7 @@
 
 const int Carrier::CARRIER_SHOTS = 5;
 
-const int Carrier::CARRIER_SIZE = 5;
+const Carrier::Ship_sz Carrier::CARRIER_SIZE = 5;
   
 const std::vector<std::string> Carrier::CARRIER_NAMES({"USS Wasp", "USS Hornet", "USS Lexington", "USS Saratoga", "USS Yorktown"});
 

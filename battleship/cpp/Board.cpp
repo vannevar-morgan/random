@@ -13,23 +13,40 @@
 std::pair<int, std::string> Board::checkHitUpdate(const std::pair<int, int>& coord){
   int hitCode = -1;
   std::string shipName = "";
-  for(int i = 0; i < m_ships.size(); ++i){
-    hitCode = m_ships[i]->checkHitUpdate(coord);
+  // for(int i = 0; i < m_ships.size(); ++i){
+  //   hitCode = m_ships[i]->checkHitUpdate(coord);
+  //   if(hitCode != -1){
+  //     // then it's a hit
+  //     shipName = m_ships[i]->getName();
+  //     if(hitCode == 1){
+  // 	// then it's a kill
+  // 	m_ships.erase(m_ships.begin() + i);
+  // 	if(m_ships.size() == 0){
+  // 	  // the the player lost
+  // 	  m_alive = false;
+  // 	}
+  //     }
+  //     break;
+  //   }
+  // }
+
+  for(auto ship_iter = m_ships.begin(); ship_iter != m_ships.end(); ++ship_iter){
+    hitCode = (*ship_iter)->checkHitUpdate(coord);
     if(hitCode != -1){
       // then it's a hit
-      shipName = m_ships[i]->getName();
+      shipName = (*ship_iter)->getName();
       if(hitCode == 1){
-	// then it's a kill
-	m_ships.erase(m_ships.begin() + i);
-	if(m_ships.size() == 0){
-	  // the the player lost
-	  m_alive = false;
-	}
+  	// then it's a kill
+  	m_ships.erase(ship_iter);
+  	if(m_ships.size() == 0){
+  	  // the the player lost
+  	  m_alive = false;
+  	}
       }
       break;
     }
   }
-  
+
   return std::pair<int, std::string>(hitCode, shipName);
 }
 
@@ -81,7 +98,7 @@ void Board::layoutShips(){
   for(Ship* s : m_ships){
     if(s != nullptr){
       for(int i = 0; i < SHIP_LAYOUT_TIMEOUT; ++i){
-	int size = s->getSize();
+	auto size = s->getSize();
 	cells = Board::makeCellsVec(size);
 	if(!Board::checkShipOverlap(cells)){
 	  s->setCells(cells);

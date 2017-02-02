@@ -6,7 +6,7 @@
 
 const int Minesweeper::MINESWEEPER_SHOTS = 2;
 
-const int Minesweeper::MINESWEEPER_SIZE = 2;
+const Minesweeper::Ship_sz Minesweeper::MINESWEEPER_SIZE = 2;
 
 const std::vector<std::string> Minesweeper::MINESWEEPER_NAMES({"USS Obstructor", "USS Barricade", "USS Barbican", "USS Camanche", "USS Planter"});
 

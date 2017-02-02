@@ -10,6 +10,7 @@ class Ship{
   // Ship class is an abstract class which provides a common interface for all derived Ships to implement.
   
 public:
+  typedef std::vector<std::pair<int, int> >::size_type Ship_sz;
   //  Ship(){ initRand(); }
 
   //  virtual ~Ship() = 0; // originally included as a way to force Ship to be an abstract class without a pure virtual function.
@@ -20,7 +21,7 @@ public:
   std::vector<std::pair<int, int> > getHitCells() const { return hitCells; }
   std::string getName() const { return name; }
   int getShots() const { return shots; }
-  int getSize() const { return size; }
+  Ship_sz getSize() const { return size; }
   bool isAlive() const { return alive; }
   
   // note that setCells() should be called before any call to getCells() or checkHit() or checkHitUpdate()
@@ -33,7 +34,7 @@ protected:
     
   std::string name;
   int shots;
-  int size;
+  Ship_sz size;
   bool alive;
   std::vector<std::pair<int, int> > cells;
   std::vector<std::pair<int, int> > hitCells;
