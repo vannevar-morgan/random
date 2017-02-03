@@ -5,10 +5,10 @@ Summary:
 -------------------
 CLI Battleship is a battleship implementation for CLI.
 
-It's meant to be extensible, with a message passing system between players and boards (to abstract the idea of a player for possible AI players or networked players).
+It's meant to be extensible, with a message passing system between players and boards (for example, to abstract the idea of a player for possible AI players or networked players).
 
 This game is written as an exercise and posted as a reference for those learning C++
-(I think writing battleship in a language is a good exercise for students to learn the language.)
+(I think writing battleship in a language is a good exercise for students to learn the language).
 
 
 Known Issues:
@@ -23,6 +23,7 @@ Some C++11 features not fully taken advantage of.
 Building / Cleaning:
 -------------------
 >make
+
 >make clean
 
 
