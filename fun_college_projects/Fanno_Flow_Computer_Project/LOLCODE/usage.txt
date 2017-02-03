@@ -1,0 +1,1 @@
+lolexec C:\Users\vann\Desktop\FANNOHEAT.LOL > C:\Users\vann\Desktop\fanno_results.txt
