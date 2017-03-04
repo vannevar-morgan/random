@@ -1,7 +1,7 @@
 Random   (a.k.a. "My junk folder")
 =============================================
 
-Where I post old projects or things I think are too general (or one-offs) to post elsewhere.  Feel welcome to message if there's something that interests you, I love feedback - but don't expect support for things in this folder.
+Where I post old projects or things I think are too general (or one-offs) to post elsewhere.  Feel free to message if there's something that interests you, I love feedback - but don't expect support for things in this folder.
 
 
 Repository Contents
