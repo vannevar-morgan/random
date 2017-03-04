@@ -6,7 +6,9 @@ Where I post old projects or things I think are too general (or one-offs) to pos
 
 Repository Contents
 -------------------
-* **/chapter_0-16** - Exercise solutions for each chapter.
+* **/battleship** - Command line battleship in different languages.
+* **/fun_college_projects** - Some projects from college I thought were fun.
+* **/n_queens** - Solution for n_queens for n = [4,42] (limited by what I can print to screen)
 
 
 License Information
